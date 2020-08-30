@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Book List</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header__text"><span><i class="fas fa-book-open"></i></span>MYBook</h1>
+
+    <p class="error__message"></p>
+    <!-- form to add book -->
+    <form class="form__group">
+      <div class="form__element">
+        <label for="book">Book Title</label>
+        <input type="text" name="book" id="book" class="input">
+      </div>
+      <div class="form__element">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" class="input">
+      </div>
+      <div class="form__element">
+        <label for="isbn">ISBN</label>
+        <input type="text" name="isbn" id="isbn" class="input">
+      </div>
+      <button type="submit" class="add__btn input">Add Book</button>
+    </form>
+
+    <table class="book__view">
+      <thead class="table__header">
+        <tr>
+          <th>Book Name</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        
+      </tbody>
+    </table>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
